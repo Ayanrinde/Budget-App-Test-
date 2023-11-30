@@ -40,7 +40,7 @@ function displayAll() {
         totalSpent += itemCost;
         resultCard.innerHTML += `
             <div class="card1">
-            <p class="heading">
+            <p class="heading text-primary">
                 ${item.pName}
             </p>
             <p>
@@ -106,7 +106,7 @@ function displayAll() {
 displayAll();
 
 if (budgetArray.length > 0) {
-    document.getElementById("resulthorn").innerHTML += `<p class="text-light fw-bold bg-success p-2 text-center w-100 pbottom">Total Budget: &#8358;${totalSpent.toFixed(2)}</p>`;
+    document.getElementById("resulthorn").innerHTML += `<p class="text-light fw-bold bg-primary p-2 text-center w-100 pbottom">Total Budget: &#8358;${totalSpent.toFixed(2)}</p>`;
 } else {
     document.getElementById("resultCard").innerHTML += `<h2 class="fw-bold textColor">No item added</h2>`;
 }
